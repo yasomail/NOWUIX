@@ -1,10 +1,14 @@
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
 import styles from './styles.scss';
+import '../x-34458-table-list';
 
 const view = (state, {updateState}) => {
 	return (
-		<div>Hello</div>
+		<div>
+			This the main component...
+			<x-34458-table-list></x-34458-table-list>
+		</div>
 	);
 };
 
